@@ -138,7 +138,7 @@ def extract_solutions_and_hints(nb, nb_dir, nb_name):
                 # Insert a link to the solution snippet script on github
                 py_url = f"{GITHUB_URL}/{py_fname}"
                 hint_text = cell_source.split("\n")[0].replace('*', '').lower()
-                new_source = f"[*Click for {hint_text}*]({py_url})\n\n"
+                new_source = f"[*Click for Reflect & Discuss solutions}*]({py_url})\n\n"
 
 
             cell["source"] = new_source
