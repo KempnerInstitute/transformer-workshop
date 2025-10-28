@@ -109,7 +109,7 @@ def extract_solutions_and_hints(nb, nb_dir, nb_name):
         cell_text = cell["source"].replace(" ", "").lower()
 
         is_hint_cell = cell_text.startswith("#hint") or cell_text.startswith("##hint") or cell_text.startswith("Hint") or cell_text.startswith("hint") or cell_text.startswith("**hint")
-        is_solution_cell = cell_text.startswith("#solution") or cell_text.startswith("##solution")
+        is_solution_cell = cell_text.startswith("#solution") or cell_text.startswith("##solution")  or cell_text.startswith("Solution")
         if is_hint_cell or is_solution_cell:
 
             # Get the cell source
